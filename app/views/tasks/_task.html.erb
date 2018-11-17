@@ -5,7 +5,7 @@
     
     <p> id : タスク : ステータス</p>
     <ul>
-      <% @tasks.each do |task| %>
+      <% tasks.each do |task| %>
         <li><%= link_to task.id, task %> : <%= task.content %> : <%= task.status %></li>
       <% end %>
     </ul>
